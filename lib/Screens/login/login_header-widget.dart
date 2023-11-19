@@ -6,15 +6,11 @@ import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
 
 class loginHeaderWidget extends StatelessWidget {
-  const loginHeaderWidget({
-    super.key,
-    required this.size,
-  });
-
-  final Size size;
+  const loginHeaderWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

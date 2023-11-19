@@ -12,18 +12,17 @@ class LoginScreen extends StatelessWidget{
   const LoginScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(tDefaultSize),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                loginHeaderWidget(size: size),
-                const LoginForm(),
-                const LoginFooterWidget()
+                loginHeaderWidget(),
+                LoginForm(),
+                LoginFooterWidget()
               ],
             ),
           ),

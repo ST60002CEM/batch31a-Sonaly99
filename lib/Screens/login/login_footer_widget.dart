@@ -30,7 +30,7 @@ class LoginFooterWidget extends StatelessWidget {
         ),
         TextButton(onPressed: (){},
           child:  const Text.rich(TextSpan(
-              text: tAlreadyHaveAnaccount,
+              text: tAlreadyHaveAnAccount,
               children: [
                 TextSpan(
                   text: tSignup,

@@ -14,9 +14,18 @@ const String tWelcomeSubTitle = "Join our community";
 const String tLoginTitle =  "Welcome Back";
 const String tLogoSubTitle = "Let's get started";
 const String tRememberMe = "Remember Me?";
-const String tAlreadyHaveAnaccount = "Already have an account?";
+const String tAlreadyHaveAnAccount = "Already have an account?";
 
 const String tEmail = "Email";
 const String tPassword = "Password";
 const String tForgotPassword = "ForgotPassword";
 const String tSignInWithGoogle = "SignInWithGoogle";
+
+const String tFormTitle = "FormTitle";
+const String tFormSubTitle = "tFormSubTitle";
+
+const String tSignUpTitle = "SignUpTitle";
+const String tSignUpSubTitle= "SignUpSubTitle";
+
+const String tFullName = "FullName";
+
