@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:furpixs/Screens/login/login_screen.dart';
+import 'package:furpixs/Signup/signup_screen.dart';
 import 'package:furpixs/constants/colors.dart';
 import 'package:furpixs/constants/sizes.dart';
 import 'package:furpixs/constants/text_strings.dart';
@@ -23,13 +24,13 @@ class WelcomeScreen extends StatelessWidget{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Image(image: AssetImage(tWelcomeScreenImage), height: 0.6,),
+            const Image(image: AssetImage(tWelcomeScreenImage), height: 500.0,),
             Column(
               children: [
                 Text(tWelcomeTitle,
-                  style:  Theme.of(context).textTheme.headline3,),
+                  style:  Theme.of(context).textTheme.headlineMedium,),
                 Text(tWelcomeSubTitle,
-                  style:Theme.of(context).textTheme.bodyText1,
+                  style:Theme.of(context).textTheme.bodySmall,
                 textAlign: TextAlign.center,),
               ],
             ),
@@ -42,7 +43,7 @@ class WelcomeScreen extends StatelessWidget{
                 ),
                 ),
                 SizedBox( width: 10.0,),
-                Expanded(child: ElevatedButton(onPressed: (){},
+                Expanded(child: ElevatedButton(onPressed: ()  => Get.to(() =>const SignUpScreen()),
                   child: Text(tSignup.toLowerCase(),),),),
               ],
             )

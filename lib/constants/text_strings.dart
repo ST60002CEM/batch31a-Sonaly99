@@ -1,7 +1,8 @@
+const String tNext = "Next";
 const String tLogin  = "Login";
 const String tSignup = "Signup";
 
-const String tAppName = ".furpix";
+const String tAppName = "FURPIX";
 const String tAppTagLine = "Let's help furries";
 
 

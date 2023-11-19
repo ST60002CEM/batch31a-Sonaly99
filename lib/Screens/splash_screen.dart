@@ -26,31 +26,34 @@ class SplashScreen extends StatelessWidget {
           () => AnimatedPositioned(
               top: splashController.animate.value ? 0 : -30,
               left: splashController.animate.value ? 0 : -30,
-              duration: const Duration(milliseconds: 1),
+              duration: const Duration(seconds: 2),
+              child: Transform.scale(
+                scale: 0.8,
               child: const Image(
                 image: AssetImage(tSplashTopIcon),
               ),
             ),
           ),
+          ),
           Obx( () =>
             AnimatedPositioned(
-              duration: const Duration(milliseconds: 1600),
+              duration: const Duration(seconds: 2),
               top: 80,
               left: splashController.animate.value ? tDefaultSize : -80,
               child: AnimatedOpacity(
                 opacity: splashController.animate.value ? 1 : 0,
-                duration: const Duration(milliseconds: 1600),
+                duration: const Duration(seconds: 2),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(tAppName, style: Theme
                         .of(context)
                         .textTheme
-                        .headline3,),
+                        .headlineMedium,),
                     Text(tAppTagLine, style: Theme
                         .of(context)
                         .textTheme
-                        .headline2,)
+                        .headlineSmall,)
                   ],
                 ),
               ),
@@ -58,10 +61,11 @@ class SplashScreen extends StatelessWidget {
           ),
 
           Obx(() =>
-            AnimatedPositioned(duration: const Duration(milliseconds: 2400),
-                bottom: splashController.animate.value ? 100 : 0,
+            AnimatedPositioned(duration: const Duration(seconds: 2),
+                bottom: splashController.animate.value ? 100 :
+                MediaQuery.of(context).size.height / 2 - tSplashContainerSize / 2 ,
                 child: AnimatedOpacity(
-                  duration: const Duration(milliseconds: 2000),
+                  duration: const Duration(seconds: 2),
                   opacity: splashController.animate.value ? 1 : 0,
                   child: const Image(image: AssetImage(tSplashImage)),
 
@@ -70,9 +74,9 @@ class SplashScreen extends StatelessWidget {
           Obx(() => AnimatedPositioned(
               bottom: splashController.animate.value ? 60 : 0,
               right: tDefaultSize,
-              duration: const Duration(milliseconds: 2400),
+              duration: const Duration(seconds: 2),
               child: AnimatedOpacity(
-                duration: const Duration(milliseconds: 2000),
+                duration: const Duration(seconds: 2),
                 opacity: splashController.animate.value ? 1 : 0,
                 child: Container(
                   width: tSplashContainerSize,
