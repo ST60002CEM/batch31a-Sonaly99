@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:furpixs/Screens/login/login_screen.dart';
 import 'package:furpixs/constants/colors.dart';
 import 'package:furpixs/constants/sizes.dart';
 import 'package:furpixs/constants/text_strings.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../constants/image_strings.dart';
 
@@ -33,9 +36,11 @@ class WelcomeScreen extends StatelessWidget{
 
             Row(
               children: [
-                Expanded(child: OutlinedButton(onPressed:(){} ,
-
-                  child: Text(tLogin.toUpperCase(),),),),
+                Expanded(child: OutlinedButton(
+                  onPressed:() => Get.to(() => const LoginScreen()) ,
+                  child: Text(tLogin.toUpperCase()),
+                ),
+                ),
                 SizedBox( width: 10.0,),
                 Expanded(child: ElevatedButton(onPressed: (){},
                   child: Text(tSignup.toLowerCase(),),),),
