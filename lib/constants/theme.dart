@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:furpixs/theme/elevated_button_theme.dart';
+import 'package:furpixs/theme/outline_button_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TAppTheme {
@@ -12,7 +14,10 @@ class TAppTheme {
       color:  Colors.black54,
   fontSize: 24,
       )
-  ));
+  ),
+  outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+  elevatedButtonTheme: TElevatedTheme.lightElevatedButtonTheme,
+  );
   static ThemeData darkTheme = ThemeData(brightness: Brightness.dark,
   textTheme: TextTheme(
   headline2: GoogleFonts.montserrat(
@@ -22,6 +27,8 @@ class TAppTheme {
   color: Colors.white60,
   fontSize: 24,
   )
-  )
+  ),
+      outlinedButtonTheme: TOutlinedButtonTheme.darkOutlineButtonTheme,
+    elevatedButtonTheme: TElevatedTheme.darkElevatedButtonTheme,
   );
 }
