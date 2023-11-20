@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furpixs/Screens/Dashboard/dashboard_screen.dart';
 import 'package:furpixs/Screens/splash_screen.dart';
 import 'package:furpixs/constants/theme.dart';
 import 'package:get/get.dart';
