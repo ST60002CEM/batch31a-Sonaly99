@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:furpixs/constants/colors.dart';
@@ -48,4 +49,4 @@ class WelcomeScreen extends StatelessWidget{
     );
   }
 
-}
+}*/
