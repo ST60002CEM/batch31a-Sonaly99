@@ -7,6 +7,8 @@ import 'package:furpixs/constants/text_strings.dart';
 import '../constants/image_strings.dart';
 
 class WelcomeScreen extends StatelessWidget{
+  const WelcomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
